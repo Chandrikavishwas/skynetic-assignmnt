@@ -1,0 +1,128 @@
+#root {
+  max-width: 1280px;
+  margin: auto;
+  text-align: center;
+  background: rgb(34, 34, 67);
+  min-height: 100vh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 24px
+}
+.navbar .nav-first-box{
+ color:#fff;
+}
+.navbar .secondBox {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.358);
+}
+.navbar .secondBox .trends {
+  background-color: white;
+  padding: 3px 10px;
+  border-radius: 7px;
+}
+.navbar .secondBox .alerts {
+  background-color: rgb(100, 97, 97);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 7px;
+}
+.navbar .secondBox .dashboard {
+  background-color: rgb(100, 97, 97);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 7px;
+}
+.navbar .thirdBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar .thirdBox>span:nth-of-type(1) {
+  border-radius: 50%;
+  background-color: rgb(40, 159, 159);
+}
+.nav-icon{
+  fill: #fff;
+  background-color: rgb(55, 55, 114);
+  border-radius: 50%;
+  padding: 2px;
+  height: 16px;
+  width: 16px;
+}
+.header{
+  margin-top: 16px;
+}
+.header-fist-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-fist-box>p:nth-of-type(1){
+  background-color:white;
+  border-radius: 10px;
+  padding:5px 10px;
+}
+.header-fist-box>p:nth-of-type(2){
+  background-color:rgb(58, 51, 104);
+  border-radius:50%;
+  height: 24px;
+  width: 24px;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-fist-box>p:nth-of-type(3){
+  background-color:rgb(114, 102, 102);
+  border-radius: 10px;
+  color: white;
+  padding:5px 10px;
+}
+.header-hifen {
+  margin: 0;
+  padding: 0;
+  width: 15px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgb(91, 84, 84),
+    white,
+    white,
+    rgb(255, 255, 255),
+    rgb(91, 84, 84)
+  );
+}
+.header-second-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.header-second-box h3{
+  color: white;
+}
+.header-second-box .header-hifen{
+  width: 35px;
+  height: 2px;
+  background: white;  
+}
+.header-third-box{
+  display: flex;
+  justify-content: center;
+
+}
+
+.header-third-box >p{
+  margin-top: 16px;
+ color:#fff;
+ width: 400px;
+font-size: 12px;
+}
