@@ -2,13 +2,27 @@
   max-width: 1280px;
   margin: auto;
   text-align: center;
-  background: rgb(34, 34, 67);
+  background:linear-gradient(90deg,#171717,#1f2937,#1b0347, #1f2937, #2b2a2a) ;
+  background-image: linear-gradient(90deg, rgb(23, 23, 23), rgb(31, 41, 55), rgb(31, 5, 79),rgb(23, 23, 23), rgb(31, 41, 55));
   min-height: 100vh;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 5px 24px
+}
+.navbar .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  
+}
+.navbar .logo .purple{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background:linear-gradient(90deg,#926dcd,#a096b0, #7f42e0,#a895c6,#9C63F7) ;
 }
 .navbar .nav-first-box{
  color:#fff;
@@ -26,17 +40,17 @@
   padding: 3px 10px;
   border-radius: 7px;
 }
+.navbar .secondBox .trends:hover{
+  background-color: rgb(175, 164, 164);
+}
 .navbar .secondBox .alerts {
-  background-color: rgb(100, 97, 97);
+  background-color: #2d3038;
   color: white;
   padding: 3px 10px;
   border-radius: 7px;
 }
-.navbar .secondBox .dashboard {
-  background-color: rgb(100, 97, 97);
-  color: white;
-  padding: 3px 10px;
-  border-radius: 7px;
+.navbar .secondBox .alerts:hover{
+  background-color: #484a51;  
 }
 .navbar .thirdBox {
   display: flex;
@@ -50,11 +64,14 @@
 }
 .nav-icon{
   fill: #fff;
-  background-color: rgb(55, 55, 114);
+  background-color: #43397e;
   border-radius: 50%;
-  padding: 2px;
-  height: 16px;
-  width: 16px;
+  padding:5px;
+  height:20px;
+  width: 20px;
+}
+.nav-icon:hover{
+  background-color: #6552d1;
 }
 .header{
   margin-top: 16px;
@@ -69,8 +86,11 @@
   border-radius: 10px;
   padding:5px 10px;
 }
+.header-fist-box>p:nth-of-type(1):hover{
+  background-color:rgb(213, 208, 208);
+}
 .header-fist-box>p:nth-of-type(2){
-  background-color:rgb(58, 51, 104);
+  background-color:#3F2166;
   border-radius:50%;
   height: 24px;
   width: 24px;
@@ -81,10 +101,13 @@
   align-items: center;
 }
 .header-fist-box>p:nth-of-type(3){
-  background-color:rgb(114, 102, 102);
+  background-color:#2d3038;
   border-radius: 10px;
   color: white;
   padding:5px 10px;
+}
+.header-fist-box>p:nth-of-type(3):hover{
+  background-color:#3b3e48;
 }
 .header-hifen {
   margin: 0;
@@ -119,10 +142,105 @@
   justify-content: center;
 
 }
-
 .header-third-box >p{
   margin-top: 16px;
- color:#fff;
- width: 400px;
-font-size: 12px;
+  color:#fff;
+  width: 400px;
+  font-size:12px;
+}
+.section-box{
+  color: #d7cccc;
+  border:2.5px solid gray;
+  border-radius: 10px;
+  margin: 20px 3rem 0 3rem;
+}
+.section-box .sorce-box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+  font-size:12px;
+  font-weight: 500;  
+}
+.section-box .sorce-box .hading{
+  margin-left:100px;
+}
+.section-box div:nth-of-type(1)>p{  
+  text-align: start;
+  margin-left:16px;
+}
+.section-box .section-icons-box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+  font-size:10px;
+  font-weight:500;
+  gap: 10px;
+  height: 30px;  
+}
+.section-box .section-icons-box:hover{
+  background-color: rgb(49, 49, 94);
+}
+.section-box .section-icons-box>div p svg{
+  fill: #d7cccc;
+  margin-left:10px;
+}
+
+.section-icons-box p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  
+}
+.section-icons-box .main-client-icons{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section-icons-box>div:nth-of-type(1)>p{
+  gap: 5px;
+  justify-content: unset;
+  align-items: center;
+}
+
+.section-icons-box:nth-last-child(1){
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.client-icons{
+  width: 16px;
+  height: 16px;
+  background-color: gray;
+  border-radius: 1rem;
+}
+
+.client-img{
+  width: 100%;
+  height: 100%;
+}
+
+.sorce-box p{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.arrow-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-box{
+  color: #fff;
+  margin-top: 20px;
+}
+
+.client-icons:nth-last-of-type(1){
+  background: #fff;
+  padding:5px;
+  border-radius: 50%;
+}
+section .section-box .hr-line{
+  color: aqua;
 }
